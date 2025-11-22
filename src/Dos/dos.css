@@ -1,0 +1,99 @@
+/* CONTENEDOR PRINCIPAL */
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+/* CONTENEDOR DEL CANVAS */
+.containerdos {
+  width: 500px;
+  height: 500px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+
+  background: #0a0a1a;
+  border-radius: 12px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CANVAS AJUSTADO */
+.containerdos canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+/* BOTÓN LANZAR */
+.btn-dos {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+
+  background: #ff004c;
+  color: white;
+  padding: 10px 24px;
+
+  font-size: clamp(14px, 2.5vw, 18px);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  box-shadow: 0px 0px 12px rgba(255, 0, 90, 0.4);
+  transition: 0.2s;
+}
+
+.btn-dos:hover {
+  background: #ff2f6f;
+  box-shadow: 0 0 20px rgba(255, 0, 90, 0.7);
+  transform: translateX(-50%) scale(1.05);
+}
+
+.btn-dos:active {
+  transform: translateX(-50%) scale(0.95);
+}
+
+/* RESULTADO A LA DERECHA */
+.resultado-box {
+  width: 220px;
+  padding: 15px;
+
+  background: #151515;
+  color: white;
+  border-radius: 10px;
+
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+/* 📱 MODO CELULAR */
+@media (max-width: 600px) {
+  .containerdos {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+  }
+
+  .btn-dos {
+    padding: 8px 18px;
+    font-size: 14px;
+    top: 10px;
+  }
+
+  .resultado-box {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    font-size: 16px;
+  }
+}

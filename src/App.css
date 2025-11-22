@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background: #111;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+/* Evitar problemas por usar <body> dentro del componente App */
+body {
+  display: block !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Encabezado general */
+.app-header {
+  text-align: center;
+  padding: 20px 10px;
+  background: #1a1a1a;
+  border-bottom: 2px solid #ff004c;
+}
+
+.app-header h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: #ff004c;
+}
+
+/* Contenedor grande */
+.container-uno,
+.container-dos {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+  background: #1c1c1c;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 76, 0.15);
+}
+
+.container-uno h2,
+.container-dos h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  color: #ff6e96;
+}
+
+/* Asegura que los canvas 3D sean responsive */
+canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 500px;
+}
+
+/* Centrar botones dentro de cada juego */
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  background: #ff004c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background: #ff336f;
+}
+
+/* Responsive extra */
+@media (max-width: 500px) {
+  .container-uno,
+  .container-dos {
+    padding: 15px;
   }
 }

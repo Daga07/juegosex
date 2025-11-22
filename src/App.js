@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Uno from "./Uno/uno";
+import Dos from "./Dos/dos";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <body>
+     <div >
+        <div className="app-header">
+          <h1>
+            Juegos de Dados 3D
+          </h1>
+        </div>
+
+        <div className="container-uno">
+          <h2>Juego de un dado</h2>
+          <Uno />
+        </div>
+
+        <div className="container-dos">
+          <h2>Juego de dos dados</h2>
+          <Dos />
+        </div>
+     </div>
+   </body>
   );
 }
 
