@@ -7,17 +7,23 @@
   width: 100%;
 }
 
-/* CONTENEDOR DEL JUEGO */
 .containeruno {
-  position: relative;
   width: 500px;
   height: 500px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+
+  background: #0a0a1a; /* Fondo oscuro */
+  border-radius: 12px;
   overflow: hidden;
 
-  background-color: #111; /* Fondo oscuro que combina con el resto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* BOTÓN LANZAR */
+/* BOTÓN */
 .btn {
   position: absolute;
   top: 20px;
@@ -47,19 +53,8 @@
   transform: translateX(-50%) scale(0.95);
 }
 
-/* CANVAS 3D RESPONSIVE */
-canvas {
-  display: block;
+/* AHORA SÍ: canvas dentro del contenedor */
+.containeruno canvas {
   width: 100% !important;
-  height: 100vh !important;
-  max-height: 100vh;
-}
-
-/* AJUSTE PARA CELULARES */
-@media (max-width: 600px) {
-  .btn {
-    padding: 10px 26px;
-    font-size: 16px;
-    top: 15px;
-  }
+  height: 100% !important;
 }

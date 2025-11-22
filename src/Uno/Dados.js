@@ -2,11 +2,11 @@ import { useTexture } from "@react-three/drei";
 import { useBox } from "@react-three/cannon";
 import { useEffect } from "react";
 
-import img1 from "../Imagenes/1.jpeg";
-import img2 from "../Imagenes/2.jpeg";
-import img3 from "../Imagenes/3.jpeg";
-import img4 from "../Imagenes/4.jpeg";
-import img5 from "../Imagenes/5.jpeg";
+import img1 from "../Imagenes/05.png";
+import img2 from "../Imagenes/02.png";
+import img3 from "../Imagenes/03.png";
+import img4 from "../Imagenes/04.png";
+import img5 from "../Imagenes/01.png";
 import img6 from "../Imagenes/6.png";
 
 export default function Dados({ throwSignal }) {

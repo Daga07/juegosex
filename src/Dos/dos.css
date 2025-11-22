@@ -63,18 +63,7 @@
   transform: translateX(-50%) scale(0.95);
 }
 
-/* RESULTADO A LA DERECHA */
-.resultado-box {
-  width: 220px;
-  padding: 15px;
 
-  background: #151515;
-  color: white;
-  border-radius: 10px;
-
-  font-size: 18px;
-  line-height: 1.4;
-}
 
 /* 📱 MODO CELULAR */
 @media (max-width: 600px) {

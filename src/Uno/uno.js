@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { Physics } from "@react-three/cannon";
 import { useState } from "react";
-import "./uno.css"; // ⬅️ Tus estilos ya aplican aquí
+import "./uno.css";
 import Dados from "./Dados.js";
 import { usePlane } from "@react-three/cannon";
 
@@ -14,7 +14,7 @@ function Floor() {
     return (
         <mesh ref={ref} receiveShadow>
             <planeGeometry args={[20, 20]} />
-            <meshStandardMaterial color="#0f0f0fff" />
+            <meshStandardMaterial color="#000000" />
         </mesh>
     );
 }
@@ -28,26 +28,25 @@ function Uno() {
 
     return (
         <div className="wrapper">
-        <div className="containeruno">
-            {/* Botón con tus estilos */}
-            <button className="btn" onClick={handleThrow}>
-                Lanzar 🎲
-            </button>
+            <div className="containeruno">
 
-            {/* Canvas full screen */}
-            <Canvas
-                camera={{ position: [0, 4, 3], fov: 40 }}
-                className="canvas"
-            >
-                <ambientLight intensity={1} />
-                <directionalLight position={[5, 10, 5]} intensity={1.2} />
+                <button className="btn" onClick={handleThrow}>
+                    Lanzar 🎲
+                </button>
 
-                <Physics gravity={[0, -9.82, 0]}>
-                    <Floor />
-                    <Dados throwSignal={throwDice} />
-                </Physics>
-            </Canvas>
-        </div>
+                <Canvas
+                    camera={{ position: [0, 4, 3], fov: 40 }}
+                    style={{ background: "#000000" }}   //  ⬅ Fondo negro real
+                >
+                    <ambientLight intensity={1} />
+                    <directionalLight position={[5, 10, 5]} intensity={1.2} />
+
+                    <Physics gravity={[0, -9.82, 0]}>
+                        <Floor />
+                        <Dados throwSignal={throwDice} />
+                    </Physics>
+                </Canvas>
+            </div>
         </div>
     );
 }
