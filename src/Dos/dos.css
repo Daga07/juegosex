@@ -13,16 +13,14 @@
   width: 500px;
   height: 500px;
   max-width: 100%;
-  aspect-ratio: 1 / 1;
   position: relative;
-
   background: #0a0a1a;
   border-radius: 12px;
   overflow: hidden;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 55px;
 }
 
 /* CANVAS AJUSTADO */
@@ -34,23 +32,15 @@
 
 /* BOTÓN LANZAR */
 .btn-dos {
-  position: absolute;
-  top: 12px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 20;
-
   background: #ff004c;
   color: white;
   padding: 10px 24px;
-
-  font-size: clamp(14px, 2.5vw, 18px);
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-
   box-shadow: 0px 0px 12px rgba(255, 0, 90, 0.4);
-  transition: 0.2s;
+  transition: 0.2s ease;
+
 }
 
 .btn-dos:hover {
@@ -74,8 +64,7 @@
   }
 
   .btn-dos {
-    padding: 8px 18px;
-    font-size: 14px;
+
     top: 10px;
   }
 

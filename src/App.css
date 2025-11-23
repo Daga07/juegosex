@@ -39,7 +39,28 @@ body {
   margin: auto;
   margin-top: 40px;
   padding: 20px;
-  background: #1c1c1c;
+  background: #080808;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 76, 0.15);
+}
+
+.container_ruleta{
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+  background: #080808;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 76, 0.15);
+}
+.container_tiempo{
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+  background: #080808;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(255, 0, 76, 0.15);
 }
@@ -59,21 +80,6 @@ canvas {
   max-height: 500px;
 }
 
-/* Centrar botones dentro de cada juego */
-button {
-  padding: 12px 20px;
-  font-size: 1rem;
-  border-radius: 10px;
-  background: #ff004c;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-button:hover {
-  background: #ff336f;
-}
 
 /* Responsive extra */
 @media (max-width: 500px) {

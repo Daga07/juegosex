@@ -21,10 +21,4 @@ export default function Dado({ throwSignal, startX = 0 }) {
     }
   });
 
-  return (
-    <mesh ref={ref} castShadow>
-      <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color="#ff004c" />
-    </mesh>
-  );
 }

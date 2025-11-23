@@ -1,0 +1,90 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.containeruno {
+  margin-top: 70px;
+  width: 500px;
+  height: 500px;
+  max-width: 100%;
+  position: relative;
+  background: #0a0a1a; /* Fondo oscuro */
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tiempo-panel-2d {
+  width: 260px;
+  padding: 20px;
+  background: #111;
+  color: white;
+  border-radius: 14px;
+  box-shadow: 0 0 15px rgba(255, 0, 90, 0.4);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.btn-iniciar-2d {
+  width: 80%;
+  padding: 12px;
+  background: #ff004c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 5px 15px rgba(255, 0, 80, 0.5);
+  transition: 0.2s;
+}
+
+.btn-iniciar-2d:hover {
+  background: #ff2d6e;
+  transform: scale(1.05);
+}
+
+.btn-iniciar-2d:active {
+  transform: scale(0.95);
+}
+
+.tiempo-label-2d {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.tiempo-accion-2d {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff4080;
+  margin-top: 4px;
+}
+
+.tiempo-restante-2d {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.progreso-container-2d {
+  width: 100%;
+  height: 10px;
+  background: #333;
+  border-radius: 10px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.progreso-barra-2d {
+  height: 100%;
+  background: #ff004c;
+  transition: width 0.3s linear;
+}

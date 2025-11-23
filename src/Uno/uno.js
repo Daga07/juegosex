@@ -28,19 +28,15 @@ function Uno() {
 
     return (
         <div className="wrapper">
+
+            <button className="btn" onClick={handleThrow}>
+                Lanzar 🎲
+            </button>
+
             <div className="containeruno">
-
-                <button className="btn" onClick={handleThrow}>
-                    Lanzar 🎲
-                </button>
-
-                <Canvas
-                    camera={{ position: [0, 4, 3], fov: 40 }}
-                    style={{ background: "#000000" }}   //  ⬅ Fondo negro real
-                >
+                <Canvas camera={{ position: [0, 4, 3], fov: 40 }} style={{ background: "#071021" }}    >
                     <ambientLight intensity={1} />
                     <directionalLight position={[5, 10, 5]} intensity={1.2} />
-
                     <Physics gravity={[0, -9.82, 0]}>
                         <Floor />
                         <Dados throwSignal={throwDice} />
